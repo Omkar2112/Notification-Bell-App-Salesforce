@@ -1,0 +1,15 @@
+<template>
+    
+        <div class="slds-grid slds-wrap">
+        <template for:each={names} for:item="name">
+        <div key={name} class="slds-col slds-size_3-of-12">
+         {name}
+         <lightning-card title="name">
+             <p class="slds-p-horizontal_small">This is a card</p>
+         </lightning-card>
+         </div>
+        </template>
+        </div>
+   
+    
+</template>

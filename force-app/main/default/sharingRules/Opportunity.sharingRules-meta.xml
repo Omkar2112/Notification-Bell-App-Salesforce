@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingOwnerRules>
+        <fullName>Opportunity_share_to_sales_rep_North</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>new Sharing rule on Opportunity object to share the Opportunities owned by SVP Sales &amp; Marketing Role users to both Sales Rep North and Sales Rep South Role users.</description>
+        <label>Opportunity share to sales rep North</label>
+        <sharedTo>
+            <role>Sales_Rep_North_India</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>SVPSalesMarketing</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Opportunity_share_to_sales_rep_South</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>new Sharing rule on Opportunity object to share the Opportunities owned by SVP Sales &amp; Marketing Role users to both Sales Rep North and Sales Rep South Role users.</description>
+        <label>Opportunity share to sales rep South</label>
+        <sharedTo>
+            <role>Sales_Rep_South_India</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>SVPSalesMarketing</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

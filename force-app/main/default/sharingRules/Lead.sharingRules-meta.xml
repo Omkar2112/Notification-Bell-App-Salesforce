@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>Lead_access_to_sales_rep_north</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Create new Sharing rule on Lead object to share the Leads with Lead Source = Web to Sales  Rep North role users with Read/Write Access.</description>
+        <label>Lead access to sales rep north</label>
+        <sharedTo>
+            <role>Sales_Rep_North_India</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>LeadSource</field>
+            <operation>equals</operation>
+            <value>Web</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingOwnerRules>
+        <fullName>Lead_access_to_sales_rep_south</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>new Sharing rule on Lead object to share the Leads owned by Sales Manager to Sale Rep South role users with Read-only access.</description>
+        <label>Lead access to sales rep south</label>
+        <sharedTo>
+            <role>Sales_Rep_South_India</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>Sales_Manager</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

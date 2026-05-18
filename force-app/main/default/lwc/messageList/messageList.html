@@ -1,0 +1,29 @@
+<template>
+
+    <template if:true={showList}>
+
+        <lightning-card title="Notifications">
+
+            <template if:true={notifications}>
+
+                <template for:each={notifications} for:item="notif">
+
+                    <div
+                        key={notif.Id}
+                        data-id={notif.Id}
+                        onclick={handleSelect}
+                        class="slds-box slds-m-around_small">
+
+                        <p>{notif.Name}</p>
+
+                    </div>
+
+                </template>
+
+            </template>
+
+        </lightning-card>
+
+    </template>
+
+</template>

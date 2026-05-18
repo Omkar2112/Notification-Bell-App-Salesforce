@@ -1,0 +1,9 @@
+<template>
+    <lightning-button label="Show/Hide" variant= "brand" onclick={handleEvent}></lightning-button>
+    <template if:true={isVisible}>
+        <lightning-card title = "Conditional Demo">
+            <lightning-button label="New" variant="grant">
+            </lightning-button>
+        </lightning-card>
+    </template>
+</template>

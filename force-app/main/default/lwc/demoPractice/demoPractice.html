@@ -1,0 +1,13 @@
+<template>
+    <div class="slds-p-around_small">
+        <lightning-button label="Show Tom" onclick={showTom}></lightning-button>
+        <lightning-button label="Show Jerry" onclick={showJerry}></lightning-button>
+
+        <template if:true={isTom}>
+            <img src={Tom} alt="Tom" width="200" />
+        </template>
+        <template if:true={isJerry}>
+            <img src={Jerry} alt="Jerry" width="200" />
+        </template>
+    </div>
+</template>
